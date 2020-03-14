@@ -1,0 +1,17 @@
+Source: rust-download
+Section: utils
+Priority: optional
+Maintainer: MOZGIII <mike-n@narod.ru>
+Build-Depends: debhelper (>= 10), dh-exec
+Standards-Version: 4.1.2
+Homepage: https://github.com/MOZGIII/rust-download-deb
+Vcs-Git: https://github.com/MOZGIII/rust-download-deb.git
+Vcs-Browser: https://github.com/MOZGIII/rust-download-deb
+
+Package: rust-download
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, curl | wget
+Provides: rustc, cargo
+Conflicts: rustc, cargo
+Replaces: rustc, cargo
+Description: Download and install rust from the web.

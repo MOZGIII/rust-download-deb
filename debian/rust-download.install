@@ -1,0 +1,2 @@
+usr/share/rust-download/rustup-init.sh
+etc/profile.d/rust-download.sh
