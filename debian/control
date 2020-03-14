@@ -9,7 +9,7 @@ Vcs-Git: https://github.com/MOZGIII/rust-download-deb.git
 Vcs-Browser: https://github.com/MOZGIII/rust-download-deb
 
 Package: rust-download
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, curl | wget
 Provides: rustc, cargo
 Conflicts: rustc, cargo
