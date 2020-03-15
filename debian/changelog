@@ -1,3 +1,9 @@
+rust-download (0.1.2) unstable; urgency=medium
+
+  * More reliable debian scripts.
+
+ -- MOZGIII <mike-n@narod.ru>  Sat, 16 Mar 2020 00:49:00 +0300
+
 rust-download (0.1.1) unstable; urgency=medium
 
   * Make package architectutre independent.

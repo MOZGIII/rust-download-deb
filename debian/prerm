@@ -19,9 +19,10 @@ set -e
 
 case "$1" in
     remove|upgrade|deconfigure)
-        . /etc/profile.d/rust-download.sh
+        export RUSTUP_HOME="/usr/local/lib/rust-download"
+        export PATH="$RUSTUP_HOME/bin:$PATH"
         export CARGO_HOME="$RUSTUP_HOME"
-        rustup self uninstall -y
+        "$RUSTUP_HOME/bin/rustup" self uninstall -y
     ;;
 
     failed-upgrade)
