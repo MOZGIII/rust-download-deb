@@ -1,3 +1,9 @@
+rust-download (0.1.5) unstable; urgency=medium
+
+  * Corrected bin paths at debian scripts and env.
+
+ -- MOZGIII <mike-n@narod.ru>  Mon, 16 Mar 2020 01:12:27 +0300
+
 rust-download (0.1.4) unstable; urgency=medium
 
   * Only invoke rustup uninstall if it exists.
