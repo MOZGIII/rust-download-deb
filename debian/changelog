@@ -1,3 +1,9 @@
+rust-download (0.1.3) unstable; urgency=medium
+
+  * Correct paths.
+
+ -- MOZGIII <mike-n@narod.ru>  Mon, 16 Mar 2020 00:59:56 +0300
+
 rust-download (0.1.2) unstable; urgency=medium
 
   * More reliable debian scripts.
