@@ -19,11 +19,12 @@ set -e
 
 case "$1" in
     remove|upgrade|deconfigure)
-        export RUSTUP_HOME="/usr/local/lib/rust-download/rustup"
-        export CARGO_HOME="/usr/local/lib/rust-download/cargo"
-        export PATH="$RUSTUP_HOME/bin:$PATH"
-        if [ -x "$RUSTUP_HOME/bin/rustup" ]; then
-            "$RUSTUP_HOME/bin/rustup" self uninstall -y
+        RUST_DOWNLOAD_DIR="/usr/local/lib/rust-download"
+        export RUSTUP_HOME="$RUST_DOWNLOAD_DIR/rustup"
+        export CARGO_HOME="$RUST_DOWNLOAD_DIR/cargo"
+        export PATH="$CARGO_HOME/bin:$PATH"
+        if [ -x "$CARGO_HOME/bin/rustup" ]; then
+            "$CARGO_HOME/bin/rustup" self uninstall -y
         fi
     ;;
 

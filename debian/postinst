@@ -20,9 +20,10 @@ set -e
 
 case "$1" in
     configure)
-        export RUSTUP_HOME="/usr/local/lib/rust-download/rustup"
-        export CARGO_HOME="/usr/local/lib/rust-download/cargo"
-        export PATH="$RUSTUP_HOME/bin:$PATH"
+        RUST_DOWNLOAD_DIR="/usr/local/lib/rust-download"
+        export RUSTUP_HOME="$RUST_DOWNLOAD_DIR/rustup"
+        export CARGO_HOME="$RUST_DOWNLOAD_DIR/cargo"
+        export PATH="$CARGO_HOME/bin:$PATH"
         /usr/share/rust-download/rustup-init.sh -y --no-modify-path
     ;;
 

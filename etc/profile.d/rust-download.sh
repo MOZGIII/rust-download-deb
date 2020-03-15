@@ -1,3 +1,4 @@
-export RUSTUP_HOME="/usr/local/lib/rust-download/rustup"
-SYSTEM_WIDE_CARGO_HOME="/usr/local/lib/rust-download/cargo"
-export PATH="$SYSTEM_WIDE_CARGO_HOME/bin:$RUSTUP_HOME/bin:$PATH"
+RUST_DOWNLOAD_DIR="/usr/local/lib/rust-download"
+export RUSTUP_HOME="$RUST_DOWNLOAD_DIR/rustup"
+SYSTEM_WIDE_CARGO_HOME="$RUST_DOWNLOAD_DIR/cargo"
+export PATH="$SYSTEM_WIDE_CARGO_HOME/bin:$PATH"
